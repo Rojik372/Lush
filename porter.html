@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porter’s Five Forces Analysis</title>
+    <style>
+        body {
+            background-color: #070d0b;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .forces-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .force-box {
+            background: #222;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="Team.html">Our Team</a></li>
+                <li><a href="Compad.html">Comp. Adv </a></li>
+                <li><a href="Pestel.html">PESTEL</a></li>
+                <li><a href="SWOT.html">SWOT</a></li>
+                <li><a href="obj.html">Obj and Goals</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Porter’s Five Forces Analysis</h1>
+        <div class="forces-container">
+            <div class="force-box">
+                <h2>Competitive Rivalry</h2>
+                <p>Highly competitive personal care market with established brands offering similar multi-purpose body wash products.</p>
+            </div>
+            <div class="force-box">
+                <h2>Supplier Power</h2>
+                <p>Suppliers of natural and sustainable ingredients hold leverage, impacting production costs and product formulations.</p>
+            </div>
+            <div class="force-box">
+                <h2>Buyer Power</h2>
+                <p>Consumers have multiple choices, demanding eco-friendly, affordable, and skin-friendly formulations.</p>
+            </div>
+            <div class="force-box">
+                <h2>Threat of Substitutes</h2>
+                <p>Traditional soaps, single-purpose body washes, and DIY organic skincare solutions serve as alternatives.</p>
+            </div>
+            <div class="force-box">
+                <h2>Threat of New Entrants</h2>
+                <p>Moderate entry barriers due to brand trust, marketing strategies, and distribution network challenges.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

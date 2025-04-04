@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojik's Roles & Responsibilities</title>
+    <style>
+        /* General Reset */
+        body, h1, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: transparent;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            list-style: none; /* Ensures no bullet points */
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        h2 i {
+            font-size: 1rem;
+            display: block;
+            margin-top: 0.3rem;
+        }
+
+        ul {
+            margin-top: 1rem;
+            padding-left: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            list-style-type: disc;
+            font-size: 1.2rem;
+            color: white;
+            margin-left: 1rem;
+        }
+
+        ul li:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+
+        ul li:nth-child(even) {
+            animation-delay: 1s;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: transparent;
+            color: white;
+            margin-top: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Roles and Responsibilities</h1>
+            <h2>Rojik Bajgai <i>CEO of CTRL One</i></h2>
+            <ul>
+                <li>Set the company’s vision, strategic goals, and long-term roadmap.</li>
+                <li>Oversee all departments, ensuring alignment with Ctrl One’s mission to innovate and dominate the global smartphone market.</li>
+                <li>Champion a culture of innovation, accountability, and customer-centric excellence across the organization.</li>
+                <li>Represent the brand in investor relations, partnerships, and high-stakes decision-making.</li>
+                <li>Drive global expansion strategies to secure Ctrl One’s position as a leader in the competitive tech industry.</li>
+               
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <hr style="border: 1px solid #fff; margin: 1rem 0;">
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitor Analysis</title>
+    <style>
+        body {
+            background-color: #070d0b;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .competitor-box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .competitor-card {
+            background: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: popIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .competitor-card:nth-child(1) { animation-delay: 0.2s; }
+        .competitor-card:nth-child(2) { animation-delay: 0.4s; }
+        .competitor-card:nth-child(3) { animation-delay: 0.6s; }
+        .competitor-card:nth-child(4) { animation-delay: 0.8s; }
+        .competitor-card:nth-child(5) { animation-delay: 1s; }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="Compad.html">Comp. Adv</a></li>
+                <li><a href="Pestel.html">PESTEL</a></li>
+                <li><a href="SWOT.html">SWOT</a></li>
+                <li><a href="obj.html">Obj and Goals</a></li>
+                <li><a href="viro.html">Viro Framework</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Competitor Analysis</h1>
+        <div class="competitor-box">
+            <div class="competitor-card">
+                <h2>Identifying Competitors</h2>
+                <p>Our key competitors in the Indian personal care market include Nivea, Fiama, Pears, and Himalaya, each offering unique strengths in the industry.</p>
+            </div>
+            <div class="competitor-card">
+                <h2>What They Do Well</h2>
+                <p><strong>Nivea:</strong> Strong brand trust with a focus on moisturizing and skincare benefits.</p>
+                <p><strong>Fiama:</strong> Luxurious fragrances and skin-conditioning ingredients.</p>
+                <p><strong>Pears:</strong> Gentle, glycerin-based formula known for skin-friendliness.</p>
+                <p><strong>Himalaya:</strong> Herbal and natural ingredients for a mild, Ayurvedic approach.</p>
+            </div>
+            <div class="competitor-card">
+                <h2>Areas for Improvement</h2>
+                <p>While competitors excel in different areas, challenges such as high pricing, artificial ingredients, or lack of versatility create opportunities for innovation.</p>
+            </div>
+            <div class="competitor-card">
+                <h2>What Makes Ctrl One Different?</h2>
+                <p>Unique 3-in-1 formulation combining cleansing, moisturizing, and refreshing properties.</p>
+                <p>Affordable yet premium-quality product with skin-friendly ingredients.</p>
+                <p>Eco-friendly packaging with sustainability in mind.</p>
+            </div>
+            <div class="competitor-card">
+                <h2>Staying Ahead</h2>
+                <p>By analyzing market trends and consumer needs, Lush continues to redefine personal care with innovative and skin-friendly products for all.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision and Mission</title>
+    <style>
+        /* General Reset */
+        body, h1, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: auto;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Quote Section */
+        .quote-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid #ffcc00;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+        .quote-author {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .quote-position {
+            font-size: 1rem;
+            color: #bbb;
+        }
+
+        /* Vision Section */
+        .vision-container, .mission-container {
+            margin-top: 2rem;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .vision-container h2, .mission-container h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .vision-list, .mission-list {
+            list-style: none;
+        }
+
+        .vision-list li, .mission-list li {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Team.html">Our Team</a></li>
+                <li><a href="Compad.html">Comp. Adv </a></li>
+                <li><a href="Pestel.html">PESTEL</a></li>
+                <li><a href="SWOT.html">SWOT</a></li>
+                <li><a href="obj.html">Obj and Goals</a></li>
+                <li><a href="comp.html">Comp. Analysis</a></li>
+                <li><a href="viro.html">Viro Framework</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CEO Quote -->
+        <div class="quote-container">
+            "We believe in redefining self-care with a single product that simplifies your routine while delivering premium quality. Our 3-in-1 body wash is designed for those who value efficiency, luxury, and sustainability."
+            <div class="quote-author">- Rojik Bajgai</div>
+            <div class="quote-position">CEO of Lush</div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="vision-container">
+            <h2>Our Vision</h2>
+            <ul class="vision-list">
+                <li style="animation-delay: 0.2s;">To lead the self-care industry by introducing a high-quality, multifunctional 3-in-1 body wash that simplifies skincare without compromising effectiveness. We envision a world where convenience meets innovation for a cleaner, fresher you.</li>
+            </ul>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="mission-container">
+            <h2>Our Mission</h2>
+            <ul class="mission-list">
+                <li style="animation-delay: 0.2s;">Our mission is to create a 3-in-1 body wash that serves as a shampoo, conditioner, and body cleanser, offering maximum efficiency with natural, skin-friendly ingredients. We strive to make self-care effortless, eco-conscious, and accessible for all.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <hr style="border: 1px solid #fff; margin: 1rem 0;">
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

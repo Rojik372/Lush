@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Scorecard</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .scorecard-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            max-width: 900px;
+        }
+
+        .scorecard-item {
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
+            width: 250px;
+        }
+
+        .scorecard-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .scorecard-item p {
+            font-size: 1rem;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Delay animations */
+        .financial { animation-delay: 0.2s; }
+        .customer { animation-delay: 0.4s; }
+        .internal { animation-delay: 0.6s; }
+        .learning { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bcg.html">BCG Matrix</a></li>
+                <li><a href="ansoff.html">Ansoff Matrix</a></li>
+                <li><a href="valuechain.html">Value Chain Analysis</a></li>
+                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Balanced Scorecard for Lush 3-in-1 Body Wash</h1>
+        <div class="scorecard-container">
+            <div class="scorecard-item financial">
+                <h2> Financial Perspective</h2>
+                <p>Increase revenue through premium pricing and sustainable product demand. Maintain cost efficiency by optimizing supply chain operations.</p>
+            </div>
+            <div class="scorecard-item customer">
+                <h2> Customer Perspective</h2>
+                <p>Enhance customer loyalty by providing eco-friendly, multi-functional body wash. Focus on social media engagement and influencer marketing.</p>
+            </div>
+            <div class="scorecard-item internal">
+                <h2> Internal Business Processes</h2>
+                <p>Improve product innovation by integrating natural ingredients. Streamline production for sustainability and efficiency.</p>
+            </div>
+            <div class="scorecard-item learning">
+                <h2> Learning & Growth</h2>
+                <p>Invest in employee training for sustainability initiatives. Encourage R&D for new eco-friendly formulations.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

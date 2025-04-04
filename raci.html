@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACI Matrix - 3-in-1 Body Wash</title>
+    <style>
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .raci-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .raci-table, .raci-table th, .raci-table td {
+            border: 1px solid white;
+        }
+
+        .raci-table th, .raci-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .raci-table th {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ONE</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
+                <li><a href="kpi.html">KPI</a></li>
+     
+                <li><a href="gantt.html">Gantt Charts</a></li>
+                <li><a href="root.html">Root Cause Analysis</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>RACI Matrix - 3-in-1 Body Wash</h1>
+        <table class="raci-table">
+            <tr>
+                <th>Task</th>
+                <th>Responsible (R)</th>
+                <th>Accountable (A)</th>
+                <th>Consulted (C)</th>
+                <th>Informed (I)</th>
+            </tr>
+            <tr>
+                <td>Product Development</td>
+                <td>R&D Team</td>
+                <td>Product Manager</td>
+                <td>Marketing Team</td>
+                <td>Executive Board</td>
+            </tr>
+            <tr>
+                <td>Manufacturing</td>
+                <td>Production Team</td>
+                <td>Operations Head</td>
+                <td>Quality Control</td>
+                <td>Supply Chain Team</td>
+            </tr>
+            <tr>
+                <td>Marketing Strategy</td>
+                <td>Marketing Team</td>
+                <td>CMO</td>
+                <td>Sales Team</td>
+                <td>Company Stakeholders</td>
+            </tr>
+            <tr>
+                <td>Sales & Distribution</td>
+                <td>Sales Team</td>
+                <td>Sales Director</td>
+                <td>Logistics Team</td>
+                <td>Retail Partners</td>
+            </tr>
+            <tr>
+                <td>Customer Feedback & Improvement</td>
+                <td>Customer Support</td>
+                <td>Product Manager</td>
+                <td>R&D Team</td>
+                <td>Executive Board</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

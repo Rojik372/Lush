@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section Styling */
+        main {
+            padding: 2rem;
+        }
+
+        .team-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 1rem;
+            background-color: #333;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .team-description {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .team-description h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-description p {
+            margin-bottom: 1rem;
+        }
+
+        .team-image {
+            flex: 0 0 150px;
+            text-align: center;
+        }
+
+        .team-image img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.2s; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: auto;
+            margin-top: 2rem;
+        }
+
+        footer hr {
+            border: 1px solid #fff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

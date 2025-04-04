@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lush</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #28282B;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Banner Styling */
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner {
+            display: flex;
+            width: 200%;
+            animation: scrollBanner 30s linear infinite;
+        }
+
+        .banner img {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @keyframes scrollBanner {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Smartphone Section */
+        .smartphones {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .smartphones h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .phone-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .phone {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .phone img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .phone:hover img {
+            transform: scale(1.1);
+        }
+
+        .phone:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #28282B;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="Team.html">Our Team</a></li>
+                <li><a href="Compad.html">Comp. Adv</a></li>
+                <li><a href="Pestel.html">PESTEL</a></li>
+                <li><a href="SWOT.html">SWOT</a></li>
+                <li><a href="obj.html">Obj and Goals</a></li>
+                <li><a href="comp.html">Comp. Analysis</a></li>
+                <li><a href="viro.html">Viro Framework</a></li>
+                <li><a href="porter.html">Posters</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner-container">
+        <div class="banner">
+            <img src="banner.jpg" alt="Banner Image 1">
+            <img src="mm.jpg" alt="Banner Image 2">
+        </div>
+    </div>
+
+    <section class="smartphones">
+        <h2>Latest Products</h2>
+        <div class="phone-list">
+            <div class="phone">
+                <img src="phone1.jpg" alt="CTRL ONE Alpha">
+                <h3>Glose - Blue Shine</h3>
+                <h4><del>Rs. 1499</del> <br> <br> Rs. 999 </h4>
+            </div>
+            <div class="phone">
+                <img src="phone2.jpg" alt="CTRL ONE Titan">
+                <h3>Glose - Maroon Bright</h3>
+                <h4><del>Rs. 1499</del> <br> <br> Rs. 999 </h4>
+            </div>
+            <div class="phone">
+                <img src="phone3.jpg" alt="CTRL ONE Edge">
+                <h3>Glose - Multi Shine</h3>
+                <h4><del>Rs. 1499</del> <br> <br> Rs. 999 </h4>
+            </div>
+        </div>
+    </section>
+
+     <section class="ingredients" style="text-align: center;">
+         <h1> Ingredients </h1> <br> <br>
+        <div class="ingredient">
+            <img src="ing.jpg" alt="Essential Oils" style="display: block; margin: 0 auto;">
+        </div>
+    </section>
+
+    <footer>
+        <hr style="border: 1px solid #fff; margin: 1rem 0;">
+        <p>&copy; 2025 Lushl rights reserved. contact@lush</p>
+    </footer>
+</body>
+</html>

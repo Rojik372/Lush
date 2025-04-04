@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Persona</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .persona-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            max-width: 900px;
+        }
+
+        .persona-item {
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
+            width: 250px;
+        }
+
+        .persona-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .persona-item p {
+            font-size: 1rem;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Delay animations */
+        .demographics { animation-delay: 0.2s; }
+        .goals { animation-delay: 0.4s; }
+        .challenges { animation-delay: 0.6s; }
+        .buying-behavior { animation-delay: 0.8s; }
+        .preferred-channels { animation-delay: 1s; }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bcg.html">BCG Matrix</a></li>
+                <li><a href="ansoff.html">Ansoff Matrix</a></li>
+                <li><a href="valuechain.html">Value Chain Analysis</a></li>
+                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Customer Persona for Lush 3-in-1 Body Wash</h1>
+        <div class="persona-container">
+            <div class="persona-item demographics">
+                <h2> Demographics</h2>
+                <p>Young professionals, students, and gym-goers (ages 18-35) who prioritize convenience and sustainability. Most reside in urban areas and have a busy lifestyle.</p>
+            </div>
+            <div class="persona-item goals">
+                <h2> Goals & Needs</h2>
+                <p>Customers seek a high-quality, all-in-one solution that simplifies their shower routine while using natural, eco-friendly ingredients.</p>
+            </div>
+            <div class="persona-item challenges">
+                <h2> Challenges</h2>
+                <p>They struggle with carrying multiple products, maintaining a minimalist lifestyle, and ensuring that their skincare choices align with their ethical values.</p>
+            </div>
+            <div class="persona-item buying-behavior">
+                <h2> Buying Behavior</h2>
+                <p>They prefer premium, ethical brands and often purchase products online or from eco-conscious stores. Subscription services appeal to their need for convenience.</p>
+            </div>
+            <div class="persona-item preferred-channels">
+                <h2> Preferred Channels</h2>
+                <p>They engage with brands through Instagram, TikTok, and YouTube, valuing influencer recommendations and customer reviews.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

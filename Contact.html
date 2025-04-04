@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Reset */
+        body, h1, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: auto;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        input, select, textarea {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: transparent;
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: #a3030e;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 1rem;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: yellow;
+            margin-top: 1rem;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="Team.html">Our Team</a></li>
+		<li><a href="Compad.html">Comp. Adv </a></li>
+		<li><a href="Pestel.html">PESTEL</a></li>
+		<li><a href="SWOT.html">SWOT</a></li>
+		<li><a href="obj.html">Obj and Goals</a></li>
+		<li><a href="viro.html">Viro Framework</a></li>
+		<li><a href="comp.html">Comp. Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+              <form id="contactForm" action="#" method="post" onsubmit="return showThankYouMessage();">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+         
+
+            <label for="description">Message</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="thankYouMessage" style="display: none; text-align: center; font-size: 1.5rem;">Thank you for contacting us! We will reach you very soon.</p>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showThankYouMessage() {
+            // Hide the form and show the thank you message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+            return false; // Prevent form submission for demonstration
+        }
+    </script>
+</body>
+</html>

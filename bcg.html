@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCG Matrix</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .bcg-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 20px;
+        }
+
+        .bcg-item {
+            width: 200px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
+        }
+
+        .bcg-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .bcg-item p {
+            font-size: 1rem;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Delay animations */
+        .stars { animation-delay: 0.2s; }
+        .cash-cows { animation-delay: 0.4s; }
+        .question-marks { animation-delay: 0.6s; }
+        .dogs { animation-delay: 0.8s; }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ansoff.html">Ansoff Matrix</a></li>
+                <li><a href="valuechain.html">Value Chain Analysis</a></li>
+                <li><a href="persona.html">Customer Persona</a></li>
+                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>BCG Matrix</h1>
+        <div class="bcg-container">
+            <div class="bcg-item stars">
+                <h2> Stars</h2>
+                <p>High growth & high market share. Best performers.</p>
+            </div>
+            <div class="bcg-item cash-cows">
+                <h2> Cash Cows</h2>
+                <p>Low growth but steady income.</p>
+            </div>
+            <div class="bcg-item question-marks">
+                <h2> Question Marks</h2>
+                <p>Potential but risky. Needs investment.</p>
+            </div>
+            <div class="bcg-item dogs">
+                <h2> Dogs</h2>
+                <p>Low growth & market share. Often phased out.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

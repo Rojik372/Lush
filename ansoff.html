@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansoff Matrix</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070d0b;
+            color: white;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .ansoff-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .ansoff-item {
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
+        }
+
+        .ansoff-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .ansoff-item p {
+            font-size: 1rem;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Delay animations */
+        .market-penetration { animation-delay: 0.2s; }
+        .product-development { animation-delay: 0.4s; }
+        .market-development { animation-delay: 0.6s; }
+        .diversification { animation-delay: 0.8s; }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ONE</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bcg.html">BCG Matrix</a></li>
+                <li><a href="valuechain.html">Value Chain Analysis</a></li>
+                <li><a href="persona.html">Customer Persona</a></li>
+                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Ansoff Matrix for Ctrl One 3-in-1 Body Wash</h1>
+        <div class="ansoff-container">
+            <div class="ansoff-item market-penetration">
+                <h2> Market Penetration</h2>
+                <p>Boosting brand awareness through social media, discounts, and wider availability in stores.</p>
+            </div>
+            <div class="ansoff-item product-development">
+                <h2> Product Development</h2>
+                <p>Introducing new variants for different skin types, adding herbal ingredients, and using eco-friendly packaging.</p>
+            </div>
+            <div class="ansoff-item market-development">
+                <h2> Market Development</h2>
+                <p>Expanding to new regions, targeting gyms, hotels, and travelers, and promoting it as a unisex product.</p>
+            </div>
+            <div class="ansoff-item diversification">
+                <h2> Diversification</h2>
+                <p>Launching related products like shampoos and face washes, creating a premium version, and exploring new segments like baby care.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

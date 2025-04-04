@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT Analysis</title>
+    <style>
+        body {
+            background-color: #070d0b;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .swot-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .swot-card {
+            background: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .swot-card:nth-child(1) { animation-delay: 0.2s; }
+        .swot-card:nth-child(2) { animation-delay: 0.4s; }
+        .swot-card:nth-child(3) { animation-delay: 0.6s; }
+        .swot-card:nth-child(4) { animation-delay: 0.8s; }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CTRL ALT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="Team.html">Our Team</a></li>
+                <li><a href="Compad.html">Comp. Adv</a></li>
+		<li><a href="Pestel.html">PESTEL</a></li>
+		<li><a href="obj.html">Obj and Goals</a></li>
+		<li><a href="comp.html">Comp. Analysis</a></li>
+		<li><a href="viro.html">Viro Framework</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>SWOT Analysis</h1>
+        <div class="swot-box">
+            <div class="swot-card">
+                <h2>Strengths</h2>
+                <p>Eco-friendly ingredients, versatile 3-in-1 functionality, dermatologically tested, and premium fragrance options.</p>
+            </div>
+            <div class="swot-card">
+                <h2>Weaknesses</h2>
+                <p>Limited brand awareness, higher pricing compared to mass-market competitors, and dependency on niche marketing.</p>
+            </div>
+            <div class="swot-card">
+                <h2>Opportunities</h2>
+                <p>Growing demand for sustainable personal care, expansion into global markets, and partnerships with wellness brands.</p>
+            </div>
+            <div class="swot-card">
+                <h2>Threats</h2>
+                <p>High competition from established personal care brands, shifting consumer preferences, and regulatory challenges.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
