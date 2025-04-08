@@ -86,15 +86,6 @@
             animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
         }
 
-        .bcg-item h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .bcg-item p {
-            font-size: 1rem;
-        }
-
         /* Animation */
         @keyframes fadeIn {
             from {
@@ -116,12 +107,11 @@
             }
         }
 
-        /* Delay animations */
-        .stars { animation-delay: 0.2s; }
-        .cash-cows { animation-delay: 0.4s; }
-        .question-marks { animation-delay: 0.6s; }
-        .dogs { animation-delay: 0.8s; }
-
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -140,25 +130,18 @@
     </header>
 
     <main class="container">
-        <h1>BCG Matrix</h1>
+     
         <div class="bcg-container">
-            <div class="bcg-item stars">
-                <h2> Stars</h2>
-                <p>High growth & high market share. Best performers.</p>
-            </div>
-            <div class="bcg-item cash-cows">
-                <h2> Cash Cows</h2>
-                <p>Low growth but steady income.</p>
-            </div>
-            <div class="bcg-item question-marks">
-                <h2> Question Marks</h2>
-                <p>Potential but risky. Needs investment.</p>
-            </div>
-            <div class="bcg-item dogs">
-                <h2> Dogs</h2>
-                <p>Low growth & market share. Often phased out.</p>
+            <div class="bcg-item">
+                <!-- Insert Image Here -->
+                <img src="bcg.jpg" alt="BCG Matrix Image" />
             </div>
         </div>
     </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 CTRL ALT. All rights reserved.</p>
+    </footer>
 </body>
 </html>
