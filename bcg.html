@@ -77,6 +77,7 @@
 
         .bcg-item {
             width: 200px;
+            height: 300px;
             padding: 20px;
             background-color: #222;
             border-radius: 10px;
@@ -84,6 +85,16 @@
             opacity: 0;
             transform: scale(0.8);
             animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Center the Image */
+        .bcg-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
 
         /* Animation */
@@ -130,7 +141,7 @@
     </header>
 
     <main class="container">
-     
+        <h1>BCG Matrix</h1>
         <div class="bcg-container">
             <div class="bcg-item">
                 <!-- Insert Image Here -->
