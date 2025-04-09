@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gantt Chart - 3-in-1 Body Wash</title>
     <style>
-        body, h1, h2, p, ul, li, a {
+        body, h1, ul, li, a {
             margin: 0;
             padding: 0;
             text-decoration: none;
@@ -63,30 +63,11 @@
             margin-bottom: 20px;
         }
 
-        .gantt-chart {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .gantt-chart, .gantt-chart th, .gantt-chart td {
-            border: 1px solid white;
-        }
-
-        .gantt-chart th, .gantt-chart td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .gantt-chart th {
-            background-color: #222;
-        }
-
-        .progress {
-            background-color: #ffcc00;
-            height: 20px;
-            border-radius: 5px;
+        .image-wrapper img {
+            max-width: 90%;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
     </style>
 </head>
@@ -96,10 +77,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-               <li><a href="balanced.html">Balanced Scorecard</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
                 <li><a href="kpi.html">KPI</a></li>
                 <li><a href="raci.html">RACI Matrix</a></li>
-              
                 <li><a href="root.html">Root Cause Analysis</a></li>
             </ul>
         </nav>
@@ -107,56 +87,9 @@
 
     <main class="container">
         <h1>Gantt Chart - 3-in-1 Body Wash</h1>
-        <table class="gantt-chart">
-            <tr>
-                <th>Task</th>
-                <th>Week 1</th>
-                <th>Week 2</th>
-                <th>Week 3</th>
-                <th>Week 4</th>
-                <th>Week 5</th>
-                <th>Week 6</th>
-            </tr>
-            <tr>
-                <td>Product Development</td>
-                <td colspan="2" class="progress"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Manufacturing</td>
-                <td></td>
-                <td colspan="3" class="progress"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Marketing Strategy</td>
-                <td></td>
-                <td></td>
-                <td colspan="2" class="progress"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Sales & Distribution</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td colspan="2" class="progress"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Customer Feedback & Improvement</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td colspan="2" class="progress"></td>
-            </tr>
-        </table>
+        <div class="image-wrapper">
+            <img src="gantt.jpg" alt="Gantt Chart - 3-in-1 Body Wash">
+        </div>
     </main>
 </body>
 </html>
