@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Root Cause Analysis - 3-in-1 Body Wash</title>
     <style>
-        body, h1, h2, p, ul, li, a {
+        body, h1, ul, li, a {
             margin: 0;
             padding: 0;
             text-decoration: none;
@@ -63,24 +63,29 @@
             margin-bottom: 20px;
         }
 
-        .root-cause-table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1s forwards;
         }
 
-        .root-cause-table, .root-cause-table th, .root-cause-table td {
-            border: 1px solid white;
+        .image-wrapper img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .root-cause-table th, .root-cause-table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .root-cause-table th {
-            background-color: #222;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     </style>
 </head>
@@ -90,50 +95,19 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-               <li><a href="balanced.html">Balanced Scorecard</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
                 <li><a href="kpi.html">KPI</a></li>
                 <li><a href="raci.html">RACI Matrix</a></li>
                 <li><a href="gantt.html">Gantt Charts</a></li>
-               
-
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <h1>Root Cause Analysis - 3-in-1 Body Wash</h1>
-        <table class="root-cause-table">
-            <tr>
-                <th>Problem</th>
-                <th>Possible Causes</th>
-                <th>Root Cause</th>
-                <th>Solution</th>
-            </tr>
-            <tr>
-                <td>Low Market Awareness</td>
-                <td>Limited advertising, lack of social media presence</td>
-                <td>Inadequate marketing strategy</td>
-                <td>Increase digital marketing efforts and partnerships</td>
-            </tr>
-            <tr>
-                <td>Product Quality Complaints</td>
-                <td>Ingredient issues, manufacturing defects</td>
-                <td>Supplier inconsistency</td>
-                <td>Strengthen quality control and supplier vetting</td>
-            </tr>
-            <tr>
-                <td>Poor Sales Performance</td>
-                <td>Weak distribution network, high pricing</td>
-                <td>Limited market reach</td>
-                <td>Expand distribution channels and offer promotions</td>
-            </tr>
-            <tr>
-                <td>Customer Retention Issues</td>
-                <td>Lack of loyalty programs, customer engagement</td>
-                <td>Weak customer relationship management</td>
-                <td>Implement loyalty rewards and better customer service</td>
-            </tr>
-        </table>
+        <div class="image-wrapper">
+            <img src="root.jpg" alt="Root Cause Analysis Image">
+        </div>
     </main>
 </body>
 </html>
