@@ -1,172 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Persona</title>
-    <style>
-        /* General Reset */
-        body, h1, h2, p, ul, li, a {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style: none;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #F9E4BC;
-            color: white;
-            text-align: center;
-        }
-
-        /* Header Styling */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav ul li a {
-            color: white;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-
-        /* Main Section */
-        .container {
-            margin-top: 50px;
-            padding: 20px;
-        }
-
-        .container h1 {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        .persona-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            max-width: 900px;
-        }
-
-        .persona-item {
-            padding: 20px;
-            background-color: #222;
-            border-radius: 10px;
-            text-align: center;
-            opacity: 0;
-            transform: scale(0.8);
-            animation: fadeIn 1s forwards, bounce 1s infinite alternate ease-in-out;
-            width: 250px;
-        }
-
-        .persona-item h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .persona-item p {
-            font-size: 1rem;
-        }
-
-        /* Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes bounce {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-5px);
-            }
-        }
-
-        /* Delay animations */
-        .demographics { animation-delay: 0.2s; }
-        .goals { animation-delay: 0.4s; }
-        .challenges { animation-delay: 0.6s; }
-        .buying-behavior { animation-delay: 0.8s; }
-        .preferred-channels { animation-delay: 1s; }
-
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">CTRL ALT</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bcg.html">BCG Matrix</a></li>
-                <li><a href="ansoff.html">Ansoff Matrix</a></li>
-                <li><a href="valuechain.html">Value Chain Analysis</a></li>
-                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
-                <li><a href="balanced.html">Balanced Scorecard</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h1>Customer Persona for Lush 3-in-1 Body Wash</h1>
-        <div class="persona-container">
-            <div class="persona-item demographics">
-                <h2> Demographics</h2>
-                <p>Young professionals, students, and gym-goers (ages 18-35) who prioritize convenience and sustainability. Most reside in urban areas and have a busy lifestyle.</p>
-            </div>
-            <div class="persona-item goals">
-                <h2> Goals & Needs</h2>
-                <p>Customers seek a high-quality, all-in-one solution that simplifies their shower routine while using natural, eco-friendly ingredients.</p>
-            </div>
-            <div class="persona-item challenges">
-                <h2> Challenges</h2>
-                <p>They struggle with carrying multiple products, maintaining a minimalist lifestyle, and ensuring that their skincare choices align with their ethical values.</p>
-            </div>
-            <div class="persona-item buying-behavior">
-                <h2> Buying Behavior</h2>
-                <p>They prefer premium, ethical brands and often purchase products online or from eco-conscious stores. Subscription services appeal to their need for convenience.</p>
-            </div>
-            <div class="persona-item preferred-channels">
-                <h2> Preferred Channels</h2>
-                <p>They engage with brands through Instagram, TikTok, and YouTube, valuing influencer recommendations and customer reviews.</p>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Lush</title>
+     <style>
+         /* General Reset */
+         body, h1, h2, p, ul, li, a {
+             margin: 0;
+             padding: 0;
+             text-decoration: none;
+             list-style: none;
+             font-family: Arial, sans-serif;
+         }
+ 
+         body {
+             background-color: #F9E4BC;
+             color: white;
+         }
+ 
+         /* Header Styling */
+         header {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 1rem 2rem;
+             background-color: #28282B;
+         }
+ 
+         .logo {
+             font-size: 1.5rem;
+             font-weight: bold;
+             font-style: italic;
+         }
+ 
+         nav ul {
+             display: flex;
+             gap: 1.5rem;
+         }
+ 
+         nav ul li a {
+             color: white;
+             font-size: 1rem;
+             transition: color 0.3s;
+         }
+ 
+         nav ul li a:hover {
+             color: #ffcc00;
+         }
+ 
+         /* Smartphone Section */
+         .smartphones {
+             padding: 2rem;
+             text-align: center;
+         }
+ 
+         .smartphones h2 {
+             margin-bottom: 1.5rem;
+             font-size: 2rem;
+         }
+ 
+         .phone-list {
+             display: flex;
+             justify-content: center;
+             gap: 2rem;
+             flex-wrap: wrap;
+         }
+ 
+         .phone {
+             background-color: #1a1a1a;
+             padding: 1rem;
+             border-radius: 10px;
+             text-align: center;
+             width: 250px;
+             transition: transform 0.3s, box-shadow 0.3s;
+         }
+ 
+         .phone img {
+             width: 100%;
+             height: 300px;
+             height: 300px;
+             object-fit: cover;
+             border-radius: 8px;
+             transition: transform 0.5s ease-in-out;
+         }
+ 
+         .phone:hover img {
+             transform: scale(1.1);
+         }
+ 
+         .phone:hover {
+             transform: translateY(-10px);
+             box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+         }
+ 
+         /* YouTube Video Embed */
+         .video-container {
+             margin: 2rem auto;
+             text-align: center;
+             max-width: 960px;
+         }
+ 
+         iframe {
+             width: 100%;
+             height: 500px;
+             border: none;
+         }
+ 
+         /* Footer */
+         footer {
+             text-align: center;
+             padding: 1rem;
+             background-color: #28282B;
+             margin-top: 2rem;
+         }
+     </style>
+ </head>
+ <body>
+     <header>
+         <div class="logo">CTRL ALT</div>
+         <nav>
+             <ul>
+                 <li><a href="vision.html">Vision</a></li>
+                 <li><a href="Team.html">Our Team</a></li>
+                 <li><a href="Compad.html">Comp. Adv</a></li>
+                 <li><a href="Pestel.html">PESTEL</a></li>
+                 <li><a href="SWOT.html">SWOT</a></li>
+                 <li><a href="obj.html">Obj and Goals</a></li>
+                 <li><a href="comp.html">Comp. Analysis</a></li>
+                 <li><a href="viro.html">Viro Framework</a></li>
+                 <li><a href="porter.html">Posters</a></li>
+                 <li><a href="more.html">More</a></li>
+                 <li><a href="Contact.html">Contact Us</a></li>
+             </ul>
+         </nav>
+     </header>
+ 
+     <section class="smartphones">
+         <h2>Our Products</h2>
+         <div class="phone-list">
+             <div class="phone">
+                 <img src="phone1.jpg" alt="CTRL ONE Alpha">
+                 <h3>Glose - Sea Minerals</h3>
+                 <h4><del>Rs. 1499</del> <br> <br> Rs. 799 </h4>
+             </div>
+             <div class="phone">
+                 <img src="Phone 2.jpg" alt="CTRL ONE Titan">
+                 <h3>Glose - Honey | Shea Butter</h3>
+                 <h4><del>Rs. 1599</del> <br> <br> Rs. 899 </h4>
+             </div>
+             <div class="phone">
+                 <img src="Phone 3.jpg" alt="CTRL ONE Edge">
+                 <h3>Glose - Coconut Snow</h3>
+                 <h4><del>Rs. 1699</del> <br> <br> Rs. 999 </h4>
+             </div>
+         </div>
+     </section>
+ 
+     <!-- YouTube Video Embed Section -->
+     <div class="video-container">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/unjEx00g_8U?si=1Bs4XUJcxGv3p5EV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+ 
+     <footer>
+         <hr style="border: 1px solid #fff; margin: 1rem 0;">
+         <p>&copy; 2025 Lushl rights reserved. contact@lush</p>
+     </footer>
+ </body>
