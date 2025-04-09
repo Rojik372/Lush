@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RACI Matrix - 3-in-1 Body Wash</title>
     <style>
-        body, h1, h2, p, ul, li, a {
+        body, h1, ul, li, a {
             margin: 0;
             padding: 0;
             text-decoration: none;
@@ -65,24 +65,29 @@
             animation: fadeIn 1s forwards;
         }
 
-        .raci-table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1s forwards;
         }
 
-        .raci-table, .raci-table th, .raci-table td {
-            border: 1px solid white;
+        .image-wrapper img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .raci-table th, .raci-table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .raci-table th {
-            background-color: #222;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     </style>
 </head>
@@ -94,60 +99,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="balanced.html">Balanced Scorecard</a></li>
                 <li><a href="kpi.html">KPI</a></li>
-     
                 <li><a href="gantt.html">Gantt Charts</a></li>
                 <li><a href="root.html">Root Cause Analysis</a></li>
-
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <h1>RACI Matrix - 3-in-1 Body Wash</h1>
-        <table class="raci-table">
-            <tr>
-                <th>Task</th>
-                <th>Responsible (R)</th>
-                <th>Accountable (A)</th>
-                <th>Consulted (C)</th>
-                <th>Informed (I)</th>
-            </tr>
-            <tr>
-                <td>Product Development</td>
-                <td>R&D Team</td>
-                <td>Product Manager</td>
-                <td>Marketing Team</td>
-                <td>Executive Board</td>
-            </tr>
-            <tr>
-                <td>Manufacturing</td>
-                <td>Production Team</td>
-                <td>Operations Head</td>
-                <td>Quality Control</td>
-                <td>Supply Chain Team</td>
-            </tr>
-            <tr>
-                <td>Marketing Strategy</td>
-                <td>Marketing Team</td>
-                <td>CMO</td>
-                <td>Sales Team</td>
-                <td>Company Stakeholders</td>
-            </tr>
-            <tr>
-                <td>Sales & Distribution</td>
-                <td>Sales Team</td>
-                <td>Sales Director</td>
-                <td>Logistics Team</td>
-                <td>Retail Partners</td>
-            </tr>
-            <tr>
-                <td>Customer Feedback & Improvement</td>
-                <td>Customer Support</td>
-                <td>Product Manager</td>
-                <td>R&D Team</td>
-                <td>Executive Board</td>
-            </tr>
-        </table>
+        <div class="image-wrapper">
+            <img src="raci.jpg" alt="RACI Matrix Image">
+        </div>
     </main>
 </body>
 </html>
