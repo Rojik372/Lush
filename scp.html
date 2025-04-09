@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scenario Planning - 3-in-1 Body Wash</title>
     <style>
-        body, h1, h2, p, ul, li, a {
+        body, h1, ul, li, a {
             margin: 0;
             padding: 0;
             text-decoration: none;
@@ -63,24 +63,17 @@
             margin-bottom: 20px;
         }
 
-        .scenario-table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .scenario-table, .scenario-table th, .scenario-table td {
-            border: 1px solid white;
-        }
-
-        .scenario-table th, .scenario-table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .scenario-table th {
-            background-color: #222;
+        .image-wrapper img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -90,8 +83,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-
-                <li><a href="ocean.html">Red Ocean/Blue Ocean Strategy</a></li>
+                <li><a href="ocean.html">Blue Ocean Strategy</a></li>
                 <li><a href="balanced.html">Balanced Scorecard</a></li>
                 <li><a href="kpi.html">KPI</a></li>
                 <li><a href="raci.html">RACI Matrix</a></li>
@@ -105,38 +97,9 @@
 
     <main class="container">
         <h1>Scenario Planning - 3-in-1 Body Wash</h1>
-        <table class="scenario-table">
-            <tr>
-                <th>Scenario</th>
-                <th>Potential Impact</th>
-                <th>Response Strategy</th>
-            </tr>
-            <tr>
-                <td>Increased Demand for Natural Ingredients</td>
-                <td>Higher production costs but greater market appeal</td>
-                <td>Source eco-friendly ingredients and emphasize sustainability in marketing</td>
-            </tr>
-            <tr>
-                <td>Regulatory Changes in the Cosmetics Industry</td>
-                <td>Possible reformulation requirements and compliance costs</td>
-                <td>Stay ahead of industry regulations and adapt formulations proactively</td>
-            </tr>
-            <tr>
-                <td>Rise of Competitors with Similar Products</td>
-                <td>Market share reduction due to increased competition</td>
-                <td>Differentiate with unique branding, customer loyalty programs, and new product variations</td>
-            </tr>
-            <tr>
-                <td>Economic Recession</td>
-                <td>Decrease in consumer spending on premium products</td>
-                <td>Introduce budget-friendly versions and flexible pricing strategies</td>
-            </tr>
-            <tr>
-                <td>Growth of E-commerce and Direct-to-Consumer Sales</td>
-                <td>Shift from retail stores to online shopping</td>
-                <td>Strengthen online presence, improve e-commerce logistics, and invest in digital advertising</td>
-            </tr>
-        </table>
+        <div class="image-wrapper">
+            <img src="sce.png" alt="Scenario Planning Image">
+        </div>
     </main>
 </body>
 </html>
