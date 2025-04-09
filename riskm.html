@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risk Matrix - 3-in-1 Body Wash</title>
     <style>
-        body, h1, h2, p, ul, li, a {
+        body, h1, ul, li, a {
             margin: 0;
             padding: 0;
             text-decoration: none;
@@ -63,24 +63,17 @@
             margin-bottom: 20px;
         }
 
-        .risk-table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .risk-table, .risk-table th, .risk-table td {
-            border: 1px solid white;
-        }
-
-        .risk-table th, .risk-table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .risk-table th {
-            background-color: #222;
+        .image-wrapper img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -90,60 +83,22 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-               <li><a href="balanced.html">Balanced Scorecard</a></li>
+                <li><a href="balanced.html">Balanced Scorecard</a></li>
                 <li><a href="kpi.html">KPI</a></li>
                 <li><a href="raci.html">RACI Matrix</a></li>
                 <li><a href="gantt.html">Gantt Charts</a></li>
                 <li><a href="root.html">Root Cause Analysis</a></li>
                 <li><a href="scp.html">Scenario Planning</a></li>
-
                 <li><a href="bmc.html">Business Model Canvas</a></li>
- 
-
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <h1>Risk Matrix - 3-in-1 Body Wash</h1>
-        <table class="risk-table">
-            <tr>
-                <th>Risk</th>
-                <th>Likelihood</th>
-                <th>Impact</th>
-                <th>Mitigation Strategy</th>
-            </tr>
-            <tr>
-                <td>Regulatory Compliance Issues</td>
-                <td>Medium</td>
-                <td>High</td>
-                <td>Ensure continuous monitoring of legal standards and adapt formulations accordingly</td>
-            </tr>
-            <tr>
-                <td>Supply Chain Disruptions</td>
-                <td>High</td>
-                <td>High</td>
-                <td>Maintain multiple supplier relationships and build emergency stock reserves</td>
-            </tr>
-            <tr>
-                <td>Customer Preference Shifts</td>
-                <td>Medium</td>
-                <td>Medium</td>
-                <td>Conduct regular market research and introduce flexible product variations</td>
-            </tr>
-            <tr>
-                <td>Reputation Damage (Negative Reviews)</td>
-                <td>Low</td>
-                <td>High</td>
-                <td>Engage actively with customers, address concerns quickly, and enhance quality control</td>
-            </tr>
-            <tr>
-                <td>Economic Downturn</td>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Introduce affordable product options and optimize operational costs</td>
-            </tr>
-        </table>
+        <div class="image-wrapper">
+            <img src="riskm.jpg" alt="Risk Matrix Image">
+        </div>
     </main>
 </body>
 </html>
