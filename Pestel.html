@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center; /* Centers the image horizontally */
         }
 
         header {
@@ -42,56 +43,6 @@
             color: #ffcc00;
         }
 
-        .container {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .pestel-box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 1rem;
-            background-color: #222;
-            border-radius: 10px;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .pestel-card {
-            flex: 1 1 calc(33% - 1rem);
-            background: #333;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideUp 0.8s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .pestel-card:nth-child(1) { animation-delay: 0.2s; }
-        .pestel-card:nth-child(2) { animation-delay: 0.4s; }
-        .pestel-card:nth-child(3) { animation-delay: 0.6s; }
-        .pestel-card:nth-child(4) { animation-delay: 0.8s; }
-        .pestel-card:nth-child(5) { animation-delay: 1s; }
-        .pestel-card:nth-child(6) { animation-delay: 1.2s; }
-
         footer {
             text-align: center;
             padding: 1rem;
@@ -117,35 +68,11 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h1>PESTEL Analysis</h1>
-        <div class="pestel-box">
-            <div class="pestel-card">
-                <h2>Political Factors</h2>
-                <p>Regulations on personal care products, FDA approvals, import/export restrictions on ingredients, and sustainability policies.</p>
-            </div>
-            <div class="pestel-card">
-                <h2>Economic Factors</h2>
-                <p>Consumer spending on skincare, inflation affecting raw materials, competition, and changing purchasing power.</p>
-            </div>
-            <div class="pestel-card">
-                <h2>Social Factors</h2>
-                <p>Growing preference for organic and eco-friendly products, awareness of skincare, and changing lifestyle trends.</p>
-            </div>
-            <div class="pestel-card">
-                <h2>Technological Factors</h2>
-                <p>Advancements in skincare formulations, sustainable packaging innovations, e-commerce growth, and AI-driven personalization.</p>
-            </div>
-            <div class="pestel-card">
-                <h2>Environmental Factors</h2>
-                <p>Demand for biodegradable packaging, water conservation in production, and sustainability in raw materials.</p>
-            </div>
-            <div class="pestel-card">
-                <h2>Legal Factors</h2>
-                <p>Compliance with safety standards, bans on animal testing, trademark laws, and labor laws affecting production.</p>
-            </div>
-        </div>
-    </div>
+    <!-- Main content section with a single image -->
+    <main>
+<img src="pestle.jpg" alt="PESTEL Analysis" style="width: 80%; max-width: 600px; height: auto;">
+
+    </main>
 
     <footer>
         <hr>
